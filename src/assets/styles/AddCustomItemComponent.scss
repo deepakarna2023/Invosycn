@@ -1,0 +1,61 @@
+.invoice-items-container {
+  padding: 2vh 3vw;
+  color: #333;
+  font-family: var(--font-family);
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+
+  .modal-dropdown, .modal-textfield {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .input-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .price-input, .quantity-input {
+      flex: 1;
+    }
+  }
+
+  .modal-checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-top: 1rem;
+    color: #1c92d2;
+  }
+
+  .button-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+
+    .add-button {
+      background-color: #1c5cd2;
+      color: #ffffff;
+      border-radius: 1rem;
+      transition: background-color 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        background-color: #164a9c;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .sync-button {
+      background-color: #1c5cd2;
+      color: white;
+      border-radius: 1rem;
+      cursor: not-allowed;
+
+      &:hover {
+        background-color: #164a9c;
+      }
+    }
+  }
+}

@@ -1,0 +1,223 @@
+$primary-color: #1c92d2;
+$hover-color: #164a9c;
+$section-title-color: grey;
+
+/* Main container styling */
+.app-container {
+  background-color: #ffffff;
+  padding: 2vh 2vw;
+  font-family: var(--font-family);
+  color: #333;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Section Title Styling */
+.section-title {
+  text-align: left;
+  color: $section-title-color;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Client Section Styling */
+.client-section {
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .full-width-dropdown {
+    width: 100%;
+  }
+
+  .selected-customer,
+  .customer-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .customer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  .card-text {
+    color: #666;
+    font-size: 0.9rem;
+  }
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  .btn-primary {
+    background-color: $primary-color;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 1vh 2vw;
+    font-size: 1rem;
+    border-radius: 0.5vw;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  .btn-secondary {
+    background-color: #f2fcfe;
+    color: #333;
+    border: 0.15vw solid #ced4da;
+    font-weight: 500;
+    padding: 1vh 2vw;
+    font-size: 1rem;
+    border-radius: 0.5vw;
+
+    &:hover {
+      background-color: #e9f7fa;
+    }
+  }
+}
+
+/* Invoice Items Table */
+.p-datatable {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.p-datatable-header {
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.delete-icon svg {
+  color: red;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  .text-grey {
+    color: grey !important;
+  }
+
+  .MuiTypography-root {
+    font-weight: bold;
+  }
+}
+
+/* Total Card */
+.total-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .total-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+
+    .total-label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .total-value {
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+}
+
+/* Modal (Dialog) Styling */
+.modal-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+  z-index: 1000; // Ensure it appears above other content
+}
+
+.modal-box {
+  background-color: #fff;
+  padding: 2rem;
+  width: 40vw;
+  max-width: 90vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  outline: none;
+  position: relative;
+
+  .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #666;
+
+    &:hover {
+      color: $hover-color;
+    }
+  }
+}
+
+.text-grey {
+  color: grey !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.btn-btns-primay {
+  background-color: #1c5cd2;
+  border-radius: 1rem;
+}
+
+.btn-btns-success {
+  background-color: green;
+  border-radius: 1rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.p-card .p-card-content {
+  padding: 0;
+}

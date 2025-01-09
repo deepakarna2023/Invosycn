@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.invoice-history-page .search-bar-container {
+  margin-bottom: 1rem;
+}
+
+.invoice-history-page .p-tag {
+  font-size: 0.875rem;
+}
+
+.row-red {
+  background-color: #f8d7da;
+}
+.toggle-buttons .filter-button {
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #000;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  box-shadow: none;
+}
+
+.toggle-buttons .filter-button.active {
+  border-bottom: 2px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.toggle-buttons .filter-button:hover {
+  color: #3b82f6;
+}
+
+.toggle-buttons .filter-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.invoice-history {
+  .p-datatable-header {
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: none;
+  }
+  .p-datatable .p-datatable-thead > tr > th {
+    background: #eef2f5;
+  }
+  .p-datatable-wrapper {
+    border-radius: 10px;
+  }
+}

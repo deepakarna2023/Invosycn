@@ -1,0 +1,91 @@
+.p-progress-spinner {
+  border-color: #3b82f6 transparent transparent transparent !important;
+}
+
+.custom-spinner {
+  border-color: #3b82f6 transparent transparent transparent !important;
+}
+
+
+.p-blockui.p-component-overlay {
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.gap-3 .p-menuitem-icon {
+  margin-right: 12px;
+}
+
+.btn-align-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* Header */
+  .header-action {
+    padding: 16px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: transform 0.3s ease;
+    z-index: 100;
+  }
+
+  /* Main Layout */
+  .layout-main {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+
+    /* Main content area */
+    .main-content {
+      flex-grow: 1;
+      transition: margin-left 0.3s ease;
+      margin-left: 6rem;
+
+      /* Adjust layout when sidebar is open */
+      &.sidebar-open {
+        margin-left: 16.5vw; /* Sidebar width */
+      }
+
+      .content-body {
+        padding: 16px;
+      }
+    }
+  }
+  .sidebar-open {
+    margin-left: 16.5vw;/* Adjust the main content padding when sidebar is open */
+    transition: padding-left 0.3s ease;
+  }
+  .main-header{
+      transition: margin-left 0.3s ease;
+      margin-left: 6rem;
+  }
+}
+.items-list {
+  .p-datatable-header {
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: none;
+  }
+  .p-datatable .p-datatable-thead > tr > th {
+    background: #eef2f5;
+  }
+  .p-datatable-wrapper {
+    border-radius: 10px;
+  }
+}
+
+

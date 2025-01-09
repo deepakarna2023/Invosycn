@@ -1,0 +1,14 @@
+.client-list {
+  .p-datatable-header {
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border: none;
+  }
+  .p-datatable .p-datatable-thead > tr > th {
+    background: #eef2f5;
+  }
+  .p-datatable-wrapper {
+    border-radius: 10px;
+  }
+}

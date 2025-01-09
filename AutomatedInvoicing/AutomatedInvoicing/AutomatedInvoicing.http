@@ -1,0 +1,6 @@
+@AutomatedInvoicing_HostAddress = http://localhost:5121
+
+GET {{AutomatedInvoicing_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

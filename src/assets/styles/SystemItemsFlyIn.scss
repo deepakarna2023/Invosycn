@@ -1,0 +1,45 @@
+.system-items-flyin {
+    padding: 1rem;
+  
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+  
+      .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  
+    .item-on-invoice {
+      background-color: #e6f7e6;
+    }
+  
+    .item-not-on-invoice {
+      background-color: #f9e6e6;
+    }
+  
+    .p-tag-success {
+      background-color: #d4edda !important;
+      color: #155724 !important;
+    }
+  
+    .p-tag-danger {
+      background-color: #f8d7da !important;
+      color: #721c24 !important;
+    }
+  }
+  .row-green {
+    background-color: #d4edda; 
+  }
+
+.row-red {
+    background-color: #f8d7da; 
+}
+
+.row-yellow {
+  background-color: #fff3cd; 
+}
+  

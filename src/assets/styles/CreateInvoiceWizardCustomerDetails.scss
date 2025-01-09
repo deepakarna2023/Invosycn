@@ -1,0 +1,205 @@
+/* Main container styling */
+.app-container {
+  background-color: #ffffff;
+  height: auto;
+  padding: 2vh 2vw;
+  font-family: var(--font-family);
+  color: #333;
+}
+
+/* Section title styling */
+.section-title {
+  color: #1c92d2;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 2vh;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.2rem;
+  }
+}
+
+/* Dropdown container */
+.MuiFormControl-root .MuiSelect-outlined {
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Customer card styling within the dropdown */
+.customer-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1vh 1vw;
+  background-color: #f8f9fa;
+  border-radius: 1vw;
+  width: 100%;
+  box-shadow: 0 0.5vh 1vw rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.6vh 1.2vw rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.2vh 1.2vw;
+  }
+
+  @media (max-width: 576px) {
+    padding: 1.5vh 1.5vw;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Customer details styling within the card */
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1vw;
+
+  h5.card-title {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  p.card-text {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.5vh 0 0;
+  }
+
+  @media (max-width: 576px) {
+    h5.card-title {
+      font-size: 0.9rem;
+    }
+
+    p.card-text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* Customer image styling */
+.customer-image {
+  width: 7vh;
+  height: 7vh;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 0.1vw solid #ddd;
+  margin-right: 1vw;
+
+  @media (max-width: 768px) {
+    width: 6vh;
+    height: 6vh;
+  }
+
+  @media (max-width: 576px) {
+    width: 5.5vh;
+    height: 5.5vh;
+    margin-bottom: 1vh;
+    margin-right: 0;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #1c5cd2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 1vh 2vw;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #164a9c;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0.8vh 1.8vw;
+    font-size: 0.9rem;
+  }
+}
+
+.btn-secondary {
+  background-color: #f2fcfe;
+  color: #333;
+  border: 0.15vw solid #ced4da;
+  font-weight: 500;
+  padding: 1vh 2vw;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: #e9f7fa;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0.8vh 1.8vw;
+    font-size: 0.9rem;
+  }
+}
+
+/* Selected customer display styling within the dropdown */
+.selected-customer {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vh 1vw;
+  white-space: nowrap;
+
+  .customer-image {
+    width: 6vh;
+    height: 6vh;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.1vw solid #ddd;
+  }
+
+  span {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+
+    &:nth-child(2) { /* Customer name */
+      font-weight: bold;
+      margin-bottom: 0.5vh;
+    }
+
+    &:nth-child(3) { /* Customer address */
+      font-size: 0.9rem;
+      color: #666;
+      max-width: 50vw;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh 1vw;
+    gap: 0.5vh;
+
+    .customer-image {
+      width: 5vh;
+      height: 5vh;
+      margin-bottom: 1vh;
+    }
+
+    span {
+      font-size: 0.8rem;
+      max-width: 40vw;
+    }
+  }
+}

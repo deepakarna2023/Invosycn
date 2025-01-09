@@ -1,0 +1,50 @@
+// Color Variables
+$primary-color: #1c5cd2;
+$secondary-color: #f2fcfe;
+$text-color: #333;
+$input-bg-color: #f8f9fa;
+$input-border-color: #ced4da;
+$created-color: #e3f2fd;
+$list-color: #e8f5e9;
+$report-color: #fff8e1;
+$settings-color: #fbe9e7;
+
+* {
+  font-family: var(--font-family);
+ 
+}
+
+body {
+  color: $text-color;
+  margin: 0;
+}
+
+.body-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  background: #e9e9e9;
+  
+}
+.layout-container {
+  display: flex;
+}
+
+.main-content {
+  // margin-left: 4vw; /* Sidebar width */
+  width: 100%; /* Adjust content width */
+}
+
+/* Make sure the content area has enough space to fit content */
+.content-area {
+  margin-top: 20px;
+}
+.p-invalid {
+  border: 1px solid red !important;
+}
+
+.p-error {
+  color: red !important;
+  font-size: 0.875rem;
+}
