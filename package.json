@@ -38,8 +38,8 @@
     "workbox-window": "^7.1.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "build": "react-scripts build && node server.js",
+   "start": "concurrently \"react-scripts start\" \"npm run start:api\"",
+    "build": "react-scripts build",
     "start:api": "json-server --watch mock-api/db.json --port 4000",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
