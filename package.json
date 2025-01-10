@@ -37,15 +37,14 @@
     "workbox-core": "^7.1.0",
     "workbox-window": "^7.1.0"
   },
-  "scripts": {
+"scripts": {
   "start": "node server.js",
-  "build": "node server.js",
-  
+  "build": "react-scripts build",
+  "start:build": "npm run build && node server.js",
   "test": "react-scripts test",
   "eject": "react-scripts eject",
-  "storybook": "concurrently \"npx storybook dev -p 6006\" \"npm run start:api\"",
-  "build-storybook": "storybook build"
-  },
+  "start:api": "json-server --watch mock-api/db.json --port 4000"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
