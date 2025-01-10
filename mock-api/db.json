@@ -1267,6 +1267,44 @@
             "billingPeriod": "BiWeekly"
           },
           "modifiedDate": "2025-01-07T11:11:24.531Z"
+        },
+        {
+          "id": "d294ff65-154d-400d-bbbf-15a1c04b71cc",
+          "invoiceNumber": "INV-1736494901579",
+          "createdDate": "2025-01-10T07:41:41.579Z",
+          "dueDate": "2025-02-09T07:41:41.579Z",
+          "isReminder": false,
+          "totalAmount": 140.4,
+          "subtotalAmount": 120,
+          "taxAmount": 20.400000000000002,
+          "invoiceStatus": "Created",
+          "invoicePaymentStatus": "Unpaid",
+          "clientId": "afd614a4-af07-4b46-8115-a24deca11cd5",
+          "companyName": "Fishbowlllc",
+          "billingPeriodStart": "2025-01-10T07:41:41.580Z",
+          "billingPeriodEnd": "2025-02-09T07:41:41.580Z",
+          "invoiceItemList": [
+            {
+              "id": "94c33390-c31c-4165-bf84-fbc2c75beeed",
+              "itemModel": {
+                "id": "f073fb82-96fa-451a-9bae-039acf0c1353",
+                "name": "item1",
+                "number": 0,
+                "price": 120
+              },
+              "quantity": 1,
+              "createdDate": "2025-01-07T10:58:25.482Z"
+            }
+          ],
+          "invoiceSetting": {
+            "isCreateInvoice": true,
+            "isBuildInvoice": false,
+            "isSendInvoice": false,
+            "sendTo": [],
+            "billingStartDate": "2025-01-07T18:30:00.000Z",
+            "billingEndDate": "2025-01-21T10:47:20.621Z",
+            "billingPeriod": "BiWeekly"
+          }
         }
       ],
       "automationSetting": {

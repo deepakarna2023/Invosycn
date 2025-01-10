@@ -1,10 +1,10 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
-
+const port = process.env.REACT_APP_SERVER_PORT;
 module.exports = function(app) {
   app.use(
     '/api', // Any requests starting with "/api" will be proxied
     createProxyMiddleware({
-      target: 'https://invosycn.onrender.com:4000/', // The server URL
+      target: `${port}`, // The server URL
       changeOrigin: true,  // Changes the origin of the request to the target URL
     })
   );

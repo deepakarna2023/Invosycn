@@ -44,7 +44,7 @@
     "eject": "react-scripts eject",
     "storybook": "concurrently \"npx storybook dev -p 6006\" \"npm run start:api\"",
     "build-storybook": "storybook build",
-    "start:api": "npx json-server --watch mock-api/db.json --port 5000"
+    "start:api": "npx json-server --watch mock-api/db.json --port 4000"
   },
   "eslintConfig": {
     "extends": [
