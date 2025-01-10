@@ -38,7 +38,7 @@
     "workbox-window": "^7.1.0"
   },
   "scripts": {
-   "start": "concurrently \"react-scripts start\" \"npm run start:api\"",
+   "start": "react-scripts start",
     "build": "react-scripts build",
     "start:api": "json-server --watch mock-api/db.json --port 4000",
     "test": "react-scripts test",
